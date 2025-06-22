@@ -4,11 +4,12 @@
     {
         static void Main(string[] args)
         {
-   
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Ahmed Adel");
-            #region MyRegion
-           
+            #region Q01
+            Console.Write("Enter a number: ");
+            string input = Console.ReadLine();
+            int number = Convert.ToInt32(input); 
+            Console.WriteLine("You entered: " + number);
+
             #endregion
 
         }
