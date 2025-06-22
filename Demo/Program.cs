@@ -12,6 +12,12 @@
 
             #endregion
 
+
+            #region Q02
+            string str = "123abc";
+            int result = Convert.ToInt32(str); // This will throw exception
+
+            #endregion
         }
     }
 }
