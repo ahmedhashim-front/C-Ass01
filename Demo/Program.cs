@@ -2,6 +2,11 @@
 {
     internal class Program
     {
+        class Person  
+        {
+            public string Name;
+        }
+
         static void Main(string[] args)
         {
             #region Q01
@@ -37,14 +42,32 @@
             Console.WriteLine("a = " + a5);
             Console.WriteLine("b = " + b5);
 
-             // اللي هيحصل:
-             //هتفضل قيمة a5زي ماهي 10 
-             // لاننا لما عملنا b5 = a5 مغيرناش قيمه a5 
-             // وقيمة المتغير b هتبقى 20 بعد التعديل.
-             // ولما نسخنا a5 إلى b5، كل واحد بقى له نسخة مستقلة من القيمة.
+            // اللي هيحصل:
+            //هتفضل قيمة a5زي ماهي 10 
+            // لاننا لما عملنا b5 = a5 مغيرناش قيمه a5 
+            // وقيمة المتغير b هتبقى 20 بعد التعديل.
+            // ولما نسخنا a5 إلى b5، كل واحد بقى له نسخة مستقلة من القيمة.
 
 
             #endregion
+            #region Q06
+
+
+            Person p1 = new Person();
+        p1.Name = "Ahmed";
+
+        Person p2 = p1;
+        p2.Name = "Ali";
+
+       Console.WriteLine("p1 name = " + p1.Name);
+       Console.WriteLine("p2 name = " + p2.Name);
+
+// اللي هيحصل:
+// الاسم في p1 هيتغير إلى "Ali" زي p2 بالضبط.
+// لأن النوع Person هو نوع مرجعي (reference type)،
+// وده معناه إن p1 و p2 بيشيروا لنفس الكائن في الذاكرة.
+
+            #endregion
         }
-    }
+}
 }
