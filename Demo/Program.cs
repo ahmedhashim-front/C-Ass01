@@ -68,7 +68,6 @@
             // وده معناه إن p1 و p2 بيشيروا لنفس الكائن في الذاكرة.
 
             #endregion
-
             #region @07
             string firstName = "Ahmed";
             string lastName = "Hashim";
@@ -76,6 +75,28 @@
             string fullName = string.Concat(firstName, " ", lastName);
 
             Console.WriteLine(fullName);
+
+            #endregion
+            #region Q08
+
+            // السؤال 8:
+            // What will be assigned to d in the following code?
+            // int d;
+            // d = Convert.ToInt32(!(30 < 20));
+
+            // الخيارات:
+            // a) 0
+            // b) 1
+            // c) -1
+            // d) Error
+            // e) Will only work if ! is replaced by Not
+
+            // الإجابة الصحيحة:
+            // b) A value 1 will be assigned to d.
+
+            int d10 = Convert.ToInt32(!(30 < 20));
+            Console.WriteLine("Value of d is: " + d10);
+
 
             #endregion
         }
