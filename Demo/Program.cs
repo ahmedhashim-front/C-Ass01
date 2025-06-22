@@ -23,9 +23,14 @@
             float result = a + b;
             Console.WriteLine("Result: " + result);
             #endregion
-          
 
 
+            #region Q04
+            string text = "Hello World";
+            string part = text.Substring(6, 5);
+            Console.WriteLine(part);
+
+            #endregion
         }
     }
 }
