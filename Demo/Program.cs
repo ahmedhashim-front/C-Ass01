@@ -62,12 +62,22 @@
        Console.WriteLine("p1 name = " + p1.Name);
        Console.WriteLine("p2 name = " + p2.Name);
 
-// اللي هيحصل:
-// الاسم في p1 هيتغير إلى "Ali" زي p2 بالضبط.
-// لأن النوع Person هو نوع مرجعي (reference type)،
-// وده معناه إن p1 و p2 بيشيروا لنفس الكائن في الذاكرة.
+            // اللي هيحصل:
+            // الاسم في p1 هيتغير إلى "Ali" زي p2 بالضبط.
+            // لأن النوع Person هو نوع مرجعي (reference type)،
+            // وده معناه إن p1 و p2 بيشيروا لنفس الكائن في الذاكرة.
+
+            #endregion
+
+            #region @07
+            string firstName = "Ahmed";
+            string lastName = "Hashim";
+
+            string fullName = string.Concat(firstName, " ", lastName);
+
+            Console.WriteLine(fullName);
 
             #endregion
         }
-}
+    }
 }
